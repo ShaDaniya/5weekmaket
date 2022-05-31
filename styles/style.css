@@ -1,8 +1,9 @@
 .shapka {
-    position: absolute;
-    top: 0px;
-    right: 0%;
-    left: 0%;
+    padding: 20px 20px 0px 100px;
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 80px;
     box-shadow: 0px 0px 10px rgba(1, 58, 76, 0.2);
     border-radius: 0px;
@@ -10,17 +11,28 @@
 }
 
 .main {
+    padding: 20px;
     width: 1440px;
     height: 850px;
     background-image: url("../assets/images/Rectangle.png");
 }
 
+.main2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main3 {
+    padding: 0 0 0 50px;
+    display: inline-flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
 h1 {
-    position: absolute;
-    top: 250px;
-    left: 70px;
-    right: 20px;
-    height: 78px;
+    padding: 0 0 0 50px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -39,10 +51,7 @@ h1::selection {
 }
 
 .text {
-    position: absolute;
-    top: 380px;
-    left: 70px;
-    right: 20px;
+    padding: 0 0 0 50px;
     font-family: 'Smooch', cursive;
     font-style: large;
     font-weight: 400;
@@ -57,10 +66,6 @@ p.text::first-letter {
     color: #2976e1;
 }
 
-ul.hr {
-    margin: 0;
-    padding: 4px;
-}
 
 ul.hr li {
     display: inline;
@@ -77,125 +82,29 @@ li {
     color: #013A4C;
 }
 
-.ulli {
-    position: absolute;
-    top: 25px;
-    height: 20px;
-}
-
-.why {
-    left: 500px;
-    right: 26.44%;
-}
-
 .why::after {
     content: "🐼"
-}
-
-.learn {
-    left: 650px;
-    right: 42.99%;
 }
 
 .learn::after {
     content: "🐼"
 }
 
-.price {
-    left: 750px;
-    right: 31.64%;
-}
 
 .price::after {
     content: "🐼"
-}
-
-.about {
-    left: 850px;
-    right: 16.02%;
 }
 
 .about::after {
     content: "🐼"
 }
 
-.blog {
-    left: 950px;
-    right: 3.12%;
-}
-
 .blog::after {
-    content: "🐼"
-}
-
-button.get {
-    position: absolute;
-    width: 114px;
-    height: 40px;
-    font-family: 'Work Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: center;
-    color: #013A4C;
-    width: 80px;
-    height: 18px;
-    left: 1150px;
-    top: 17px;
-    box-sizing: border-box;
-    height: 40px;
-    width: 120px;
-    background: #FFD063;
-    border: 1px solid #FFD063;
-    border-radius: 4px;
-}
-
-button.get:hover {
-    background: rgba(255, 255, 255, .2);
-}
-
-button.get:active {
-    background: white;
-}
-
-button.log {
-    position: absolute;
-    width: 75px;
-    height: 40px;
-    width: 41px;
-    height: 18px;
-    left: 1300px;
-    top: 17px;
-    font-family: 'Work Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 18px;
-    text-align: center;
-    box-sizing: border-box;
-    position: absolute;
-    height: 40px;
-    width: 80px;
-    background: #FFFFFF;
-    border: 1px solid #346170;
-    border-radius: 4px;
-    color: #013A4C;
-}
-
-button.log:hover {
-    background: linear-gradient(#f5ae00, #f59500) #f5ae00;
-}
-
-button.log:active {
-    background: linear-gradient(#f59500, #f5ae00) #f59500;
+    content: "🐼";
+    padding: 0 100px 0 0;
 }
 
 .oneflow {
-    position: absolute;
-    top: 500px;
-    left: 70px;
-    right: 20px;
     width: 176px;
     height: 50px;
     background-color: #FFD063;
@@ -213,10 +122,6 @@ button.oneflow:active {
 }
 
 .take {
-    position: absolute;
-    top: 500px;
-    left: 270px;
-    right: 40px;
     width: 176px;
     height: 50px;
     background-color: #013A4C;
@@ -233,10 +138,63 @@ button.take:active {
     background: rgba(150, 233, 193, 0.5);
 }
 
+button.get {
+    width: 114px;
+    height: 40px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #013A4C;
+    width: 80px;
+    height: 18px;
+    box-sizing: border-box;
+    height: 40px;
+    width: 120px;
+    background: #FFD063;
+    border: 1px solid #FFD063;
+    border-radius: 4px;
+}
+
+button.get:hover {
+    background: rgba(255, 255, 255, .2);
+}
+
+button.get:active {
+    background: white;
+}
+
+button.log {
+    width: 75px;
+    height: 40px;
+    width: 41px;
+    height: 18px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    box-sizing: border-box;
+    height: 40px;
+    width: 80px;
+    background: #FFFFFF;
+    border: 1px solid #346170;
+    border-radius: 4px;
+    color: #013A4C;
+}
+
+button.log:hover {
+    background: linear-gradient(#f5ae00, #f59500) #f5ae00;
+}
+
+button.log:active {
+    background: linear-gradient(#f59500, #f5ae00) #f59500;
+}
+
 .globus {
-    position: absolute;
-    top: 25px;
-    left: 1400px;
     width: 20px;
     height: 20px;
 }
@@ -256,7 +214,7 @@ a.globus:active {
     height: 30.95px;
     left: 20px;
     right: 0%;
-    top: 17px;
+    top: 30px;
     bottom: 0.17%;
     box-shadow: inset 0 0 6px;
     padding: 10px;
@@ -288,12 +246,18 @@ a.global:active {
 }
 
 .second {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     background-image: url("../assets/images/Rectangle1.png");
     width: 1440px;
     height: 288px;
 }
 
 .secp {
+    flex-basis: 100%;
     color: #f5f2f2;
     text-align: center;
     font-family: 'Roboto';
@@ -314,59 +278,40 @@ a.global:active {
 }
 
 .apotease {
-    height: 27px;
-    position: absolute;
-    left: 100px;
-    top: 965px;
-
+    height: 35px;
 }
 
 .tele2 {
-    height: 66px;
-    position: absolute;
-    left: 250px;
-    top: 950px;
+    height: 35px;
 }
 
 .dagens {
-    height: 18px;
-    position: absolute;
-    left: 400px;
-    top: 970px;
+    height: 35px;
 }
 
 .dormakow {
-    height: 11px;
-    position: absolute;
-    left: 600px;
-    top: 970px;
+    height: 35px;
 }
 
 .experis {
     height: 35px;
-    position: absolute;
-    left: 800px;
-    top: 955px;
 }
 
 .newsec {
-    height: 48px;
-    position: absolute;
-    left: 1000px;
-    top: 952px;
+    height: 35px;
 }
 
 .system {
-    height: 54px;
-    position: absolute;
-    left: 1200px;
-    top: 950px;
+    height: 35px;
 }
 
 .footer {
-    background-image: url("../assets/images/footer.png");
+    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
     width: 1440px;
     height: 276px;
+    background-image: url("../assets/images/footer.png");
 }
 
 #flogo {
@@ -379,6 +324,8 @@ a.global:active {
 }
 
 .add {
+    flex-basis: 100%;
+    padding: 10px;
     color: #FFFFFF;
     font-family: 'Akshar', sans-serif;
 }
@@ -388,14 +335,12 @@ a.global:active {
 }
 
 .bfoot {
+    margin: 50px -50px 0 -650px;
     background-color: #FFD063;
     color: #013A4C;
     width: 203px;
     height: 40px;
     left: 400px;
-    top: 1240px;
-    position: absolute;
-    height: 40px;
     background: #FFD063;
     border: 1px solid #FFD063;
     border-radius: 4px;
@@ -456,45 +401,5 @@ body {
 
     100% {
         background-color: darkgoldenrod;
-    }
-}
-
-.box {
-    width: 50px;
-    height: 50px;
-    background-color: rgb(243, 157, 157);
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation: render1 4s ease-in-out 2;
-}
-
-@keyframes render1 {
-    0% {
-        top: 0;
-        left: 0;
-        background-color: rgb(237, 180, 180);
-    }
-
-    25% {
-        top: 0;
-        left: 1440px;
-        background-color: rgb(156, 236, 146);
-        border-radius: 50%;
-    }
-
-    50% {
-        top: 840px;
-        left: 1440px;
-        background-color: rgb(202, 140, 240);
-        border-radius: 0%;
-    }
-
-    75% {
-        top: 840px;
-        left: 0;
-        background-color: rgb(237, 180, 180);
-        border-radius: 50%;
     }
 }

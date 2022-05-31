@@ -409,3 +409,44 @@ body {
         background-color: darkgoldenrod;
     }
 }
+
+    .box {
+        width: 50px;
+        height: 50px;
+        background-color: rgb(243, 157, 157);
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: render1 4s ease-in-out 2;
+    }
+
+    @keyframes render1 {
+        0% {
+            top: 0;
+            left: 0;
+            background-color: rgb(237, 180, 180);
+        }
+
+        25% {
+            top: 0;
+            left: 100%;
+            background-color: rgb(156, 236, 146);
+            border-radius: 50%;
+        }
+
+        50% {
+            top: 100%;
+            left: 100%;
+            background-color: rgb(202, 140, 240);
+            border-radius: 0%;
+        }
+
+        75% {
+            top: 100%;
+            left: 0;
+            background-color: rgb(237, 180, 180);
+            border-radius: 50%;
+        }
+
+}

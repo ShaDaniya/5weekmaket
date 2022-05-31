@@ -1,6 +1,11 @@
+body {
+    display: flex;
+    flex-direction: column;
+    flex: 100%;
+}
+
 .shapka {
     padding: 20px 20px 0px 100px;
-    width: 1440px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,10 +16,11 @@
 }
 
 .main {
+    display: flex;
     padding: 20px;
-    width: 1440px;
-    height: 850px;
+    height: 100vh;
     background-image: url("../assets/images/Rectangle.png");
+   background-size: cover;  /* не разобралась, как сделать, чтобы картинка сжималась по ширине */
 }
 
 .main2 {
@@ -252,7 +258,7 @@ a.global:active {
     flex-wrap: wrap;
     justify-content: space-around;
     background-image: url("../assets/images/Rectangle1.png");
-    width: 1440px;
+    /* width: 1440px; */
     height: 288px;
 }
 
@@ -309,7 +315,7 @@ a.global:active {
     padding: 20px;
     display: flex;
     flex-flow: column wrap;
-    width: 1440px;
+    /* width: 1440px; */
     height: 276px;
     background-image: url("../assets/images/footer.png");
 }
